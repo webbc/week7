@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_main"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </android.support.v4.view.ViewPager>
+
+    <!-- 底部的分割线 -->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="#55000000" />
+
+    <!-- 底部4个页签 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="3dp"
+        android:paddingTop="3dp" >
+
+        <LinearLayout
+            android:id="@+id/ll_tab_home"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/ivTabHome"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/selector_home_tab" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="1dp"
+                android:text="首页"
+                android:textColor="#000"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_tab_park"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/ivTabPark"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/selector_park_tab" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="1dp"
+                android:text="广场"
+                android:textColor="#000"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_tab_person"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/ivTabPerson"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/selector_person_tab" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="1dp"
+                android:text="个人"
+                android:textColor="#000"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

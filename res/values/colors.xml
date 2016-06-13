@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 充满屏幕宽度按钮的背景色和按下之后的背景色 -->
+    <color name="match_width_button_normal">#47ABEF</color>
+    <color name="match_width_button_pressed">#0085D0</color>
+
+    <!-- 按钮不可用 -->
+    <color name="disable_button">#CDCDCD</color>
+    <color name="bule_overlay">#660D92DD</color>
+
+    <!-- 个人页面 -->
+    <color name="white">#ffffff</color>
+    <color name="transparent">#00000000</color>
+
+</resources>

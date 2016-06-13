@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#47ABEF"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:src="@drawable/back" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="失物招领"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="姓名:(必填)"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/et_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入姓名" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="手机:(必填)"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/et_tel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入手机号" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="选择添加图片:(选填)"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btn_choose_pic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="点击选择图片"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/iv_pic"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_launcher"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="丢失物品:(必填)"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/et_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:hint="请对丢失的物品做简要描述"
+                android:minLines="3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp" >
+
+            <Button
+                android:id="@+id/btn_ok"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_blue"
+                android:text="确定"
+                android:textColor="#fff" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

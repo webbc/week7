@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!-- 焦点图 -->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp" >
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/vp_foucs_ad"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp" >
+                </android.support.v4.view.ViewPager>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_alignBottom="@id/vp_foucs_ad"
+                    android:background="#55000000"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="#ffffff"
+                        android:textSize="14sp" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_dot"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="5dp"
+                        android:orientation="horizontal" >
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <!-- 中间的4个长条 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/llTake"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_green_normal"
+                    android:clickable="true"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_vertical"
+                        android:paddingRight="5dp"
+                        android:src="@drawable/a444" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="快递代拿"
+                        android:textColor="#fff"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llSend"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_blue"
+                    android:clickable="true"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_vertical"
+                        android:paddingRight="5dp"
+                        android:src="@drawable/take1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="寄快递"
+                        android:textColor="#fff"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:clickable="true"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/llParttime"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_red_normal"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_vertical"
+                        android:paddingRight="5dp"
+                        android:src="@drawable/parttime1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="兼职招聘"
+                        android:textColor="#fff"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llBusyTake"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_red_normal"
+                    android:clickable="true"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_vertical"
+                        android:paddingRight="5dp"
+                        android:src="@drawable/expressur" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="特快加急件"
+                        android:textColor="#fff"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- 6大功能快捷图标 -->
+
+            <com.example.week7.view.MyGridView
+                android:id="@+id/gridView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:numColumns="3"
+                android:scrollbars="none" >
+            </com.example.week7.view.MyGridView>
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

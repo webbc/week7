@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#47ABEF"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:onClick="onBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="关于星期七"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="关于星期七"
+        android:textColor="#000"
+        android:textSize="22sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="20dp"
+        android:lineSpacingMultiplier="1.5"
+        android:text="        星期七诞生于2013年1月27日，起源于淮南师范学院，由创始人李一鸣等人负责运营，E8网络工作室负责技术等各领域高校精英组成的创业团队合作开发的一款校园App。现公司共有员工30余人。始终遵循“新媒体，新科技，新传媒”的文化理念，努力于为各大高校的莘莘学子提供全方位更便捷优惠的服务及为各类商家企业产品推广文化发展提供宣传指导而效劳。坚持秉承“服务第一，深度覆盖”的任务准绳。"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="16sp" />
+
+</LinearLayout>

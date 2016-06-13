@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000" >
+
+    <RelativeLayout
+        android:id="@+id/user_send_head"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#47ABEF" >
+
+        <Button
+            android:id="@+id/iv_back"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/iv_back"
+            android:text="电脑维护"
+            android:textColor="#ffffff"
+            android:textSize="19dp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/user_send_head"
+        android:background="#00000000"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:text="姓名:(必填)"
+                android:textColor="#70000000"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/et_name"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/bg_table"
+                android:hint="请输入姓名"
+                android:textColor="#70000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:text="手机:(必填)"
+                android:textColor="#70000000"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/et_tel"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/bg_table"
+                android:hint="请输入手机号"
+                android:numeric="integer"
+                android:textColor="#70000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:text="寝室号:(必填)"
+                android:textColor="#70000000"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/et_roomid"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/bg_table"
+                android:hint="请输入寝室号"
+                android:textColor="#70000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:text="备注:(电脑状况)"
+                android:textColor="#70000000"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/et_remark"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/bg_table"
+                android:gravity="left|top"
+                android:hint="请输入电脑损坏状况和指定需求 "
+                android:textColor="#70000000"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btn_ok"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button_blue"
+                android:text="提交"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

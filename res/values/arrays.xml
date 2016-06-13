@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="express_weight">
+        <item>小件(30积分)</item>
+        <item>中件(60积分)</item>
+        <item>大件(90积分)</item>
+        <item>特大件(不支持积分)</item>
+        <item>小件,中件(1元)</item>
+        <item>大件,特大件(2元)</item>
+    </string-array>
+    <string-array name="express_weight_2">
+        <item>小件(1元)</item>
+        <item>中件(2元)</item>
+        <item>大件(3元)</item>
+        <item>特大件(5元)</item>
+    </string-array>
+    <string-array name="express_shop">
+        <item>申通快递</item>
+        <item>圆通快递</item>
+        <item>中通快递</item>
+        <item>国通快递</item>
+        <item>韵达快递</item>
+        <item>全峰快递</item>
+        <item>百世汇通</item>
+        <item>宅急送</item>
+        <item>邮政EMS</item>
+        <item>优速快递</item>
+    </string-array>
+
+</resources>

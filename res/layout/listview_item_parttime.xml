@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:paddingLeft="5dp" >
+
+            <ImageView
+                android:id="@+id/iv_parttime"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY" />
+
+            <ImageView
+                android:id="@+id/iv_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_mark_recommend"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:ellipsize="end"
+                android:paddingLeft="5dp"
+                android:singleLine="true"
+                android:text="暑假工"
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:paddingLeft="5dp"
+                android:text="学历高中以上"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_company"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="right"
+                android:paddingBottom="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp"
+                android:singleLine="true"
+                android:text="公司"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

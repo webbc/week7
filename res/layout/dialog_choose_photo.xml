@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#EBEBEB" >
+
+    <Button
+        android:id="@+id/btn_take"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#EBEBEB"
+        android:text="使用相机拍照"
+        android:textColor="#2A77DF" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/btn_take"
+        android:background="#A6A6A6" />
+
+    <Button
+        android:id="@+id/btn_album"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_take"
+        android:background="#EBEBEB"
+        android:text="从相册选择"
+        android:textColor="#2A77DF" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/btn_album"
+        android:background="#A6A6A6" />
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view2"
+        android:background="#69AAEC"
+        android:text="返回"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>

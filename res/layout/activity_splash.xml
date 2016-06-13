@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scaleType="fitXY"
+        android:src="@drawable/welcome" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:text="星期七"
+            android:textColor="#66000000" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ProgressBar
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:indeterminateDrawable="@drawable/rotate_loding_360" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:paddingLeft="5dp"
+                android:text="正在加载..."
+                android:textColor="#66000000" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

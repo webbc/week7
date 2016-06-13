@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backpicure"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/common_title_bg_green" >
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:text="注册"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp" >
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:paddingLeft="10dp"
+                android:src="@drawable/user_name" />
+
+            <EditText
+                android:id="@+id/et_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入手机号"
+                android:inputType="phone"
+                android:paddingLeft="35dp"
+                android:singleLine="true"
+                android:textColor="#fff"
+                android:textColorHint="#fff"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp" >
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:paddingLeft="10dp"
+                android:src="@drawable/week7_vcode" />
+
+            <EditText
+                android:id="@+id/et_vcode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入验证码"
+                android:inputType="number"
+                android:paddingLeft="35dp"
+                android:singleLine="true"
+                android:textColor="#fff"
+                android:textColorHint="#fff"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_get_vcode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/common_small_btn_bg_green"
+                android:clickable="true"
+                android:text="获取验证码"
+                android:textColor="#fff"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp" >
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:paddingLeft="10dp"
+                android:src="@drawable/week7_password" />
+
+            <EditText
+                android:id="@+id/et_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入密码"
+                android:inputType="textPassword"
+                android:paddingLeft="35dp"
+                android:singleLine="true"
+                android:textColor="#fff"
+                android:textColorHint="#fff"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp" >
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:paddingLeft="10dp"
+                android:src="@drawable/week7_password" />
+
+            <EditText
+                android:id="@+id/et_rpassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入确认密码"
+                android:inputType="textPassword"
+                android:paddingLeft="35dp"
+                android:singleLine="true"
+                android:textColor="#fff"
+                android:textColorHint="#fff"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/iv_school"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:src="@drawable/school_icon" />
+
+            <TextView
+                android:id="@+id/tv_school"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="请选择学校"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_get_school"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/common_small_btn_bg_green"
+                android:clickable="true"
+                android:text="点击选择学校"
+                android:textColor="#fff"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_reg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/common_big_btn_bg_green"
+            android:text="注册"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</RelativeLayout>
